@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Lavar o rosto</li>
+        <li>Trocar de roupa</li>
+        <li>Tomar café da manhã</li>
+    </ol>
+    <!--Da pra usar dentro da tag ol o complemento type para selecionar o tipo da marcaçao da lista: 1, a, A, i, I-->
+    <!--Tambem da pra usar junto com o type, o start, para saber de onde começará a marcaçao, porem deve-se usar numeros no start (independente do type)-->
+    <!-- li = list item/ ul = unordened list/ od = ordened list-->
+       <ol type="a" start="6">
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Lavar o rosto</li>
+        <li>Trocar de roupa</li>
+        <li>Tomar café da manhã</li>
+    </ol>
+    <h2>Listas nao ordenadas</h2>
+    <ul type="square">
+        <li>Pao</li>
+        <li>Leite</li>
+        <li>Ovo</li>
+        <li>Queijo</li>
+        <li>Presunto</li>
+    </ul>
+    <!--Neste, os types sao: disk, square, circle -->
+    <h2>Misturadas</h2>
+    <h3>Meus videogames favoritos</h3>
+    <ul>
+    <li>SNES</li>
+        <ol type="a">
+             <li>Super Mario</li>
+             <li>Zelda</li>
+             <li>Aladdin</li>
+        </ol>
+    <li>PlayStation</li>
+        <ul type="a">
+            <li>Metal Slug</li>
+        </ul>
+    </ul>
+    <h2>Lista de definições</h2>
+    <!-- Temos a dl = definition list/ dt= termo definido / dd = descrition definition-->
+     <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcacao para a criacao do conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcacao para criacao do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programacao para a criacao de unteratividade de um site</dd>
+     </dl>
+</body>
+</html>

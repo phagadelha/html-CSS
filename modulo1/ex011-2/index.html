@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/ChatGPT Image 12 de fev. de 2026, 15_51_16.ico" type="image/x-icon">
+    <title>Midia-videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Esses videos estão hospedados no meu proprio servidor</p>
+    <h2>Primeira opção:</h2>
+    <!--Usar a tag width para diminuir o tamanho do video NO SITE, ele continua do mesmo tamanho no servidor-->
+    <video src="videos/mp4.mp4" width="500" controls></video>
+    <video src="videos/webm.webm" width="500" controls></video>
+    <video src="videos/ogv.ogv" width="500" controls></video> <!--Pelo que vimos, o chrome nao esta lendo o arquivo OGV-->
+
+     <h2>Agora vamos reduzir a um video, compativel com alguns navegadores diferentes:</h2>
+    <!--Agora, vamos resumir ele em um video para se adaptar a cada navegador/pc-->
+    <video width="500" controls>
+        <source src="videos/mp4.mp4" type="video/mp4">
+        <source src="videos/ogv.ogv" type="video/ogv">
+        <source src="videos/webm.webm" type="video/webm">
+        <p>Seu navegador nao tem compatibilidade com reproduçao de videos</p>
+        <!--Note que o parágrafo apenas vai aparecer como mensagem no site, se nenhum dos videos que voce inserir for compatível com o navegador-->
+        <!--Usar dessa forma pode ser muito pesado, vamos testar agora um jeito melhor (Nao sei porque ensinam se é ruim, mas é isso)-->
+    </video>
+    <h2>Vamos agora à terceira opção (mais viavel)</h2>
+    <!--Estamos pegando um video no youtube, em "Compartilhar > incorporar > ele te da um codigo html"-->
+    <!--A melhor solução, é hospedar os videos no youtube (do cliente) e direcionar o video pro site, "puxar" do youtube para o seu site-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7wdwqYcMoaQ?si=l900uEqLUruZAGWi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Caso voce queira hospedar videos que sao exclusivamente do seu site, para assinantes e tal, o prof indicou o vimeo-->
+     <div width="560" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1158419326?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Trails Will Blaze - BBC Winter Olympics 2026"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p></p>
+</body>
+</html>

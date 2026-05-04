@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title> <!--Tomar cuidado com direitos autorais-->
+</head>
+<body>
+    <!--A tag source DEVE ser acima da tag de img.. DEVE colocar na ordem crescente dos pixels (pequena - media - grande - enorme - etc)
+    Necessario ter tres imagens de tamanhos diferenetes para celular, tablet e notebook/pc. Tamanhos usados na aula: 300 / 700 / 1000-->
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <!--largura maxima(max-width), srcset (indicar a imagem no tamanho a ser utilizada); o type deve ser indicado após a barra.--> 
+        <!--Traduzindo a tag abaixo: "se o navegador/tela tiver menos de 750pixels/px (tamanho indicado em max-width), ele vai utilizar a imagem pequena (que está no srcset)-->
+        <source media="(max-width: 750px)" srcset="imagens/piqueno.png" type="image/png">
+        <!--Traduzindo a tag abaixo: "se o navegador/tela tiver menos de 1050pixels/px (tamanho indicado em max-width), ele vai utilizar a imagem media (que está no srcset)-->
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grandi.png" alt="imagem flexivel">
+
+    <h1>Audios</h1>
+        <p>Vamos aprender a reproduzir audios em HTML5</p>
+         <!--Abaixo é a primeira forma, a tag controls faz aparecer o play/pause/stop no site, o autoplay nao funcionou-->
+        <audio src="audios/Cooked - The Grey Room _ Golden Palms.mp3" controls></audio>
+        <!--Abaixo é a segunda forma, a tag controls faz aparecer o play/pause/stop no site, o autoplay nao funcionou-->
+        <audio preload="metadata" controls>
+            <!--preload auto = só vai considerar que o site terminou de carregar quando o audio carregar tambem,nao se aconselha usar, autoplay nao esta funcionando-->
+            <source src="audios/Cooked - The Grey Room _ Golden Palms.mp3" type="audio/mpeg">
+            <source src="audios/Cooked - The Grey Room _ Golden Palms.ogg" type="audio/ogg">
+            <source src="audios/Cooked - The Grey Room _ Golden Palms.wav" type="audio/wav">
+            <p>Infelizmente seu navegador nao consegue reproduzir o audio. <a href="audios/Cooked - The Grey Room _ Golden Palms.mp3"> Clique aqui para baixar o arquivo</a></p>
+    </audio> 
+        <h1>Videos</h1>
+        <p>Vamos colocar um video agora</p> 
+        <video controls>
+            <source src="videos/15297680 1920 1080 25Fps.mp4" type="video/mp4">
+        
+
+        </video>
+    </picture>
+</body>
+</html>

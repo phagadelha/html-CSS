@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { 
+            /* 
+            por padrao o h1 é um box-level, mas podemos alterar utilizando o display:'
+            display: inline
+            */
+            
+            background-color: lightgray;
+            height: 300px;
+            width: 500px;
+            border-width: 10px;
+            border-style: double;
+            border-color: rgb(124, 124, 229);
+            /*
+            a ordem sempre será a que esta acima
+            conseguimos simplificar o que esta acima escrevendo: 
+            border: 10px solid gray;
+            */
+
+            padding-top: 30px;        
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            /*
+            a ordem sempre vai ser começando em cima e indo sentido horario
+            padding: 30px 30px 30px 30px;
+            mas aqui tambem temos um porem: caso voce esccreva apenas duas medidas, ao inves de ser o topo e a direita, vai ser sempre topo e bottom
+            padding: 10px 10px; (vai alterar o topo e o bottom)
+            e se colocar apenas um valor, todos serao modificados para esse valor
+            */
+            
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            /*
+            margin: auto
+            se usar margin: auto > fica centralizado
+            -------------------------------------------
+            aqui a ordem tambem será começando no topo e indo sentido horario.
+            margin: 20px 20px 20px 40px;
+            voce pode tambem centralizar usando apenas dois valores com o auto, as margens modificadas serao da esquerda e da direita
+            margin: 20px auto 40px auto;
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: rgb(94, 20, 162); 
+            /*
+            outline tambem sera na ordem acima: 
+            outline: 5px dashed purple;
+
+                                 
+            /*
+            margin: auto
+            se usar margin: auto > fica centralizado
+            */
+        }
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tambem sao exemplos de box-level, as ok <a href="#">links sao exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

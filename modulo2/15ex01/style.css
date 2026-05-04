@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body { 
+    background-color: #96d9d1da;
+    font-size: small;
+    font-weight: lighter; 
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+    /*
+    usamos a # e o . para identificar o que apontamos na pagina principal
+    id = #
+    class = .
+    */
+h1#principal{
+    text-align: center;
+    background-color: #3e8178;
+    color: #feffff;
+    
+}
+h1 { 
+    color: #0f7368;
+    
+}
+h2.basico { 
+    color: #1b8c43;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+h2.intermediario { 
+    color: #c79943;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+h2.avancado { 
+    color: #961616;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+p { 
+    color: rgb(0, 0, 0);
+}

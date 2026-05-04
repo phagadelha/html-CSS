@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <style>
+        body {
+            background-color: darkgrey;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div > p { 
+            display: none
+        }
+        div:hover > p { 
+            /*Isso quer dizer: quando eu passar o mouse pelo DIV, vai acontecer algo APENAS COM O paragrafo (depende do que eu escrever), ele nao mexe na configura;cao do div:hover que ja existe */
+            display: block;
+            color: rgb(255, 254, 254);
+            background-color: blue;
+            
+        }
+        div:hover {
+            color: rgb(255, 255, 255);
+            background-color: blueviolet;
+        }
+      
+    </style>
+</head>
+    <!--Continuaçao pseudoclasses -->
+    <!--hover: quando passa o mouse em cima ele muda a configuraçao, exemplo: cor-->
+    <!-- usando o simbolo > nós conseguimos 'dizer' que algo esta dentro de algo. exemplo:" div > p "= quer dizer que o p (paragrafo) está dentro da div-->
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Exemplo de Hover
+        <p>Texto escondido</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

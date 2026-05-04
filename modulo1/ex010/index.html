@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <p>Você pode acessar o  <a href="https://gustavoguanabara.github.io/">repositório público</a>  do Guanabara no GitHub.</p>
+    <p>Você tambem pode acessar o canal dele do <a href="https://youtube.com/cursoemvideo/">YouTube</a>.</p>
+    <!--Desse jeito, quando clica no site ele automaticamente vai pro site, saindo do site inicial (nao abre outro navegador e sim sobrepõe o primeiro site)
+    Para isso nao acontecer usamos dentro da tag <a> o target="_blank" rel="external"-->
+    <h2>Exemplo para abrir em outra aba de navegador</h2>
+    <p>Você pode acessar o  <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público</a>  do Guanabara no GitHub.</p>
+    <p>Você tambem pode acessar o canal dele do <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">YouTube</a>.</p>
+    <h1>Links Internos</h1>
+    <!-- Para criar links internos, devem haver mais paginas. Digite a tag <a> e depois Ctrl+Espeaço para selecionar a pagina. Tambem é possivel usar o target external. Mas é utilizado tambem o target next (de next page). Funciona como External-->
+     <h2>Vamos começar com um exemplo.</h2>
+     <p>Esta é a primeira pagina do site. Se voce quiser acessar a segunda pagina, clique <a href="page002.html" target="_blank" rel="next">aqui.</a> </p>
+    <!--Se a pagina estiver dentro de alguma apsta, voce deve informar a pasta primeiro no ref, note aqui embaixo o caminho da pagina-->
+    <p>Voce pode acessar, tambem, nossa <a href="noticias/page003.html" target="_blank" rel="next">pagina de noticias.</a></p>
+    <!-- Se voce colocar no href ./ (propria pasta) e ../ (pasta anterior) (talvez com tres pontos aumente uma pasta anterior, mas nao testei ainda)-->
+     <h1>Links para Download</h1>
+    <!--Voce deve ter o arquivo na pasta do site e puxa-lo na tag <a>. Acredito que sendo um arquivo ele abre para download-->
+     <ul>
+        <li>Baixe o arquivo <a href="Livro/curriculum.pdf"target="_blank" rel="next">aqui.</a></li>
+        <li>Baixe a imagem <a href="Livro/ChatGPT Image 10 de jan. de 2026, 22_40_19.png" target="_blank" rel="next">aqui.</a></li>
+    </ul>
+</body>
+</html>
