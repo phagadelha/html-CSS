@@ -3,6 +3,9 @@ Curso HTML5 e CSS3
 
 Estou aprendendo a criar sites e a gerenciar repositórios no GitHub.
 Estou testando agora os comandos do Git aqui no VISUAL STUDIO. Aprendendo com o Guanabara e com o ChatGPT<br>
+
+---
+
 Módulo 1:<br>
 <a href="https://phagadelha.github.io/html-CSS/modulo1/ex001/index.html"> Executar o Exercicio 001 </a><br>
 <a href="https://phagadelha.github.io/html-CSS/modulo1/ex002/index.html"> Executar o Exercicio 002 </a><br>
@@ -18,7 +21,9 @@ Módulo 1:<br>
 <a href="https://phagadelha.github.io/html-CSS/modulo1/ex011-1/index.html"> Executar o Exercicio 011-1 </a><br>
 <a href="https://phagadelha.github.io/html-CSS/modulo1/ex011-2/index.html"> Executar o Exercicio 011-2 </a><br>
 <a href="https://phagadelha.github.io/html-CSS/modulo1/ex012/index.html"> Executar o Exercicio 012 </a><br>
+
 ---
+
 Módulo 2:<br>
 <a href="https://phagadelha.github.io/html-CSS/modulo2/13ex01/cor01"> Executar o Exercicio 013: Cor </a><br>
 <a href="https://phagadelha.github.io/html-CSS/modulo2/13ex01/cor02"> Executar o Exercicio 013: Cor Gradiente </a><br>
