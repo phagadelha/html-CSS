@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+           background-image: url('images/target001.png');
+           background-size: 100% 100%;
+           position: relative;
+           height: 500px;
+           padding: 10px;
+           background-color: purple;
+
+        }
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* container é o elemento pai, e conteudo é o elemento filho. O container tem uma posição relativa, e o conteudo tem uma posição absoluta. O conteudo é posicionado no centro do container usando left: 50% e top: 50%, e depois é ajustado para ficar exatamente no centro usando transform: translate(-50%, -50%). */
+        /* Conteudo tem uma altura e largura definidas, para que o transform funcione corretamente. Se o conteudo não tivesse uma altura e largura definidas, ele não seria posicionado corretamente no centro do container. */
+        /*translate é uma função de transformação que move um elemento em um plano bidimensional. No exemplo, translate(-50%, -50%) move o elemento para a esquerda e para cima em 50% de sua largura e altura, respectivamente, o que o posiciona exatamente no centro do container. */
+        /* transform é uma propriedade CSS que permite aplicar transformações a um elemento, como rotação, escala, translação, etc. Quando coloca negativo mexe pra cima e para a esquerda, positivo mexe pra baixo e para a direita. */
+        /* margin auto é uma forma de alinhar um elemento verticalmente, mas para isso é necessário que o elemento tenha uma altura definida */
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+        
+    
+</body>
+</html>
