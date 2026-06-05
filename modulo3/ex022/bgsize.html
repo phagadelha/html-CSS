@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho do BackGround</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('images/wallpaper002.jpg');
+            background-position: center top; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*Soluçao ruim é colocar o background size 100% 100% com a hight em 100vh tambem, pois a imagem estica. Melhor usar o Cover com a Height em 100vh*/
+            /*tambem ha o contain que faz a imagem caber dentro do background, mas pode deixar espaços vazios, o cover é melhor para preencher o background, mas pode cortar partes da imagem*/
+        }
+        main {
+            background-color:aliceblue;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px darkblue solid;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste autem officia aliquid ab unde itaque, saepe asperiores pariatur quo, ad dolor? Id facere quam dolore ad nobis nostrum, ratione voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ullam eaque, totam sint, illo deleniti alias vel nisi a dolor animi eum officia. Ea rem ipsa, natus sed eaque error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea maxime, sit sequi reprehenderit odio molestias culpa modi ad beatae architecto? Nihil voluptate distinctio non aliquid iste est soluta repellat?</p>
+    </main>
+</body>
+</html>
