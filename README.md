@@ -45,3 +45,8 @@ Módulo 2:<br>
 Primeiro projeto: Projeto Android<br>
 <a href="https://phagadelha.github.io/html-CSS/modulo2/desafio010 - primeiro projeto/desafio10"> Executar o Projeto Android: Tentativa </a><br>
 <a href="https://phagadelha.github.io/html-CSS/modulo2/desafio010 - corrigido/index.html"> Executar o Projeto Android: Correção e Ajustes </a><br>
+
+---
+
+Segundo projeto: Projeto Cordel<br>
+<a href="https://phagadelha.github.io/projeto-cordel/"> Executar o Projeto Cordel ! </a><br>
