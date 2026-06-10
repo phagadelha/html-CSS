@@ -48,5 +48,5 @@ Primeiro projeto: Projeto Android<br>
 
 ---
 
-Segundo projeto: Projeto Cordel: Tentativa<br>
-<a href="https://phagadelha.github.io/projeto-cordel/"> Executar o Projeto Cordel ! </a><br>
+Segundo projeto: Projeto Cordel<br>
+<a href="https://phagadelha.github.io/projeto-cordel/"> Executar o Projeto Cordel: Tentativa ! </a><br>
