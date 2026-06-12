@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+    <style>
+        body { 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+            width: 500px;
+            border: 2px solid red;
+            border-collapse: collapse;
+            
+        }
+        /* 
+        border collapse é para que as linhas apareçam mais juntas ou mais separadas
+        collapse: grudadas
+        separate: fica com espacinhos entre elas
+        */
+        tr { 
+            background-color: rgb(206, 255, 196);
+        }
+        tr.linha {
+            background-color: rgb(83, 69, 206);
+        }
+        /*
+        No background no <tr>> pode ser usado class para que só uma linha fique com cor tambem.
+        no <td> tambem
+        */
+        td { 
+            border: 1px solid black;
+            
+            padding: 8px;
+        }
+        td.dado { 
+            background-color: rgb(255, 191, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Minha Primeira Tabela
+    </h1>
+    <!-- 
+        Hierarquia de tabelas (simples)
+        Table: Tabela
+            Table Rows <tr> : Linhas da tabela
+                Table Header: Cabeçalho de tabela
+                Table Data <td> : Dados da tabela, que  (é aqui que se usa a borda solida pra aparecer as linhas entre todos os td)
+        > Não é obrigatório fechar as tags <tr> e <td>, mas como no VS ja cria o fechamento, nao tem pq apagar todos.
+        > Se voce criar textos sem respeitar a hierarquia, os dados vao vir antes ou depois da tabela.
+        -->
+    <table>
+        <tr class="linha">
+            <td>A1
+            <td>B1
+            <td>C1
+        <tr>
+            <td>A2
+            <td class="dado">B2
+            <td>C2
+        <tr>
+            <td>A3
+            <td>B3
+            <td>C3
+        
+    </table>
+    
+</body>
+</html>
