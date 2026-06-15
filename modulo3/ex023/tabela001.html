@@ -10,6 +10,7 @@
         }
         table {
             width: 500px;
+            height: 500px;
             border: 2px solid red;
             border-collapse: collapse;
             
@@ -18,6 +19,7 @@
         border collapse é para que as linhas apareçam mais juntas ou mais separadas
         collapse: grudadas
         separate: fica com espacinhos entre elas
+        
         */
         tr { 
             background-color: rgb(206, 255, 196);
@@ -31,8 +33,8 @@
         */
         td { 
             border: 1px solid black;
-            
             padding: 8px;
+            text-align: center; /* Esse é o alinhamento horizontal (right, center, left), tem tbm o vertical que é o align-items ou vertical-align (top, middle, bottom) */
         }
         td.dado { 
             background-color: rgb(255, 191, 0);
@@ -51,6 +53,7 @@
                 Table Data <td> : Dados da tabela, que  (é aqui que se usa a borda solida pra aparecer as linhas entre todos os td)
         > Não é obrigatório fechar as tags <tr> e <td>, mas como no VS ja cria o fechamento, nao tem pq apagar todos.
         > Se voce criar textos sem respeitar a hierarquia, os dados vao vir antes ou depois da tabela.
+        Caption é
         -->
     <table>
         <tr class="linha">
@@ -65,6 +68,10 @@
             <td>A3
             <td>B3
             <td>C3
+        <tr>
+            <td>A4
+            <td>B4
+            <td>C4
         
     </table>
     
