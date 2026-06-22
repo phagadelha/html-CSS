@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESCLANDO CELULAS</title>
+    <style>
+        table {
+            width: 200px;
+            border-collapse: collapse         
+        }
+
+        td, th { 
+            border: 1px solid black;
+            padding: 12px; 
+            text-align: center;       
+        }
+    </style>
+</head>
+<body>
+     <table>
+        <tr>
+            <td colspan="3">A</td>
+            <!--
+            Expandindo o A para duas colunasa mais, para que ele ocupe as duas proximas colunas mesclando-as, utilize o numero total de colunas que ele irá ocupar, portanto apaguei as duas colunas que viriam ao lado, B e C
+            -->
+
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+            <!--
+            Expandindo o D para duas linhas a mais, para que ele ocupe as duas proximas linhas mesclando-as, utilize o numero total de linhas que ele irá ocupar. Portanto apaguei as duas proximas LINHAS, que ficam abaixo da letra D, que sao G e J
+            -->
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        <tr>
+           
+            <td>K</td>
+            <td>L</td>
+        
+    </table>
+    
+</body>
+</html>
