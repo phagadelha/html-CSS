@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        td, th { 
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;       
+        }
+      
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nome</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+            <!-- 
+            Scope serve pra demonstrar onde estao os elementos, exemplo no th GRUPO os elementos entao na coluna embaixo dele, entao o scpe será col. Ja no th FILMES, ele ocupa uma colspan de 3 entao o scope dele sera colgroup. Quando é em Rows, usa-se rowgroup
+            Porem quando o grupo ocupa VARIOS espaços (assim como em FILMES, mas ha apenas uma linha sendo usada ou coluna para descrever o elemento, usa-se apenas o row ou col mesmo se o cabeçalho ocupar mais de uma linha/coluna)
+            --> 
+        </thead>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Ana</td>
+            <td>Alien</td>
+            <td>Oblivion</td>
+            <td>Vingadores</td>
+        <tr>
+            <td>Julia</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>        
+        <tr>
+            <td>Maria</td>
+            <td>Rambo</td>
+            <td>Matrix</td>
+            <td>Big Hero</td> 
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Roger</td>
+            <td>Intocaveis</td>
+            <td>Amnesia</td>
+            <td>Gladiador</td>
+        <tr>
+            <td>Lucas</td>
+            <td>Wall-e</td>
+            <td>Oldoboy</td>
+            <td>Dangal</td>        
+        <tr>
+            <td>Bruno</td>
+            <td>Star Wars</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+            
+    </table>
+
+    
+</body>
+</html>
